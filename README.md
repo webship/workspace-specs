@@ -1,4 +1,4 @@
-# @webship/workspace-specs
+# @webship.co/workspace-specs
 
 The **Specs** workspace of the [Webship Workspace](https://github.com/webship/workspace) dashboard:
 the `specs/` folder (type `files`), its settings file (`core/config/workspace.specs.settings.yml`),
