@@ -1,7 +1,7 @@
 {
   "name": "@webship.co/workspace-specs",
   "version": "1.0.0-alpha1",
-  "description": "The Specs workspace for Webship Workspace: the `specs/` folder (type files), its settings file, its 0 commands and its docs, activated as a plugin.",
+  "description": "The Specs workspace for Webship Workspace: the `specs/` folder (type files), its settings file, its 2 commands and its docs, activated as a plugin.",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
   "license": "ISC",
@@ -29,7 +29,10 @@
     "workspace": {
       "key": "specs",
       "settingsTemplate": "config/workspace.specs.settings.yml",
-      "files": [],
+      "files": [
+        "commands/cmd-spdd.sh",
+        "commands/cmd-tools-specs.sh"
+      ],
       "docs": [
         "docs/AGENTS.md",
         "docs/CLAUDE.md",
