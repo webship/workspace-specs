@@ -1,6 +1,6 @@
 {
   "name": "@webship.co/workspace-specs",
-  "version": "1.0.0-beta1",
+  "version": "1.0.0-beta2",
   "description": "The Specs workspace for Webship Workspace: the `specs/` folder (type files), its settings file, its 2 commands and its docs, activated as a plugin.",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
