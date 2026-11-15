@@ -1,0 +1,6 @@
+{ "summaries": {
+  "dev-site-builder": "Builds, clones, backs up and removes the sites of `dev/` with the folder's commands, and puts the Webship-js testing stack on them",
+  "dev-workflow": "How work is done in `dev/`: every builder and tool with its flags, the order of work, the settings keys",
+  "dev-build": "`/dev-build <builder> <name>`: picks the builder, checks the name is free, builds the site and says what goes on from there",
+  "dev-build-and-test": "A new session that builds a site with a builder of the folder and runs its first Webship-js feature"
+} }

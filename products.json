@@ -1,0 +1,8 @@
+{
+ "summaries": {
+  "products-maintainer": "Works on a product (a real checkout) in `products/` and brings it to green before a push: its checks, its pipeline on this machine, a worktree for a branch, a backup",
+  "products-workflow": "How work is done in `products/`: see what is declared, check, run the pipeline locally, push when green; every command with its flags, the settings keys",
+  "products-check": "`/products-check <product> [checks]`: prints the plan, runs the declared checks and says what is red and why",
+  "products-green-gate": "A new session that runs a product's checks and its pipeline on this machine and reports green or red"
+ }
+}

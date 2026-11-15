@@ -1,0 +1,8 @@
+{
+ "summaries": {
+  "docs-writer": "Writes and edits the markdown documents of `docs/` in place, checks what they say against the thing itself, backs one up before a rewrite",
+  "docs-workflow": "How work is done in `docs/`: what a document is, find, back up, check, edit in place; the two commands, the settings keys",
+  "docs-write": "`/docs-write <name> [what it should say]`: finds or starts the document, checks before writing, edits the file in place and says what changed",
+  "docs-write-a-document": "A new session that writes a reference document, checked against what it describes"
+ }
+}

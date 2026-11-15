@@ -1,0 +1,5 @@
+bash /tmp/claude-1000/-home-rajab-workspace-core-workspace-app/bbebf673-3643-4eb5-983b-8204bf37ed0e/scratchpad/fp/bin/helpall.sh
+bash cmd-tools-hostnames.sh
+bash cmd-tools-screen.sh --list
+bash cmd-automated-testing-webship11-0-x-project.sh --help 2>&1 | head -12
+bash cmd-tools-testing.sh --help 2>&1 | head -6

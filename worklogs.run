@@ -1,0 +1,3 @@
+bash /tmp/claude-1000/-home-rajab-workspace-core-workspace-app/bbebf673-3643-4eb5-983b-8204bf37ed0e/scratchpad/fp/bin/helpall.sh
+echo '# Session worklog' > session-worklog-2026-01-31-example.md && bash cmd-tool-backup-worklog.sh session-worklog-2026-01-31-example && ls ../backups/worklogs | sed 's/--.*/--<time>.tar.gz/' ; rm -f session-worklog-2026-01-31-example.md
+bash cmd-tool-sync-agents.sh --help 2>&1 | head -3

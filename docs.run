@@ -1,0 +1,2 @@
+bash /tmp/claude-1000/-home-rajab-workspace-core-workspace-app/bbebf673-3643-4eb5-983b-8204bf37ed0e/scratchpad/fp/bin/helpall.sh
+echo '# Demo document' > demo-document.md && bash cmd-tool-backup-doc.sh demo-document && ls ../backups/docs | sed 's/--.*/--<time>.tar.gz/' ; rm -f demo-document.md
