@@ -26,7 +26,7 @@ bash cmd-spdd.sh                                              # the specs: numbe
 bash cmd-spdd.sh dev/mysite "say what the change is"          # start one: the folder, spec.yml and an empty 01-story.md
 bash cmd-spdd.sh 001 --spdd-action show                       # where it is and which files it has
 bash cmd-spdd.sh 001 --spdd-action review                     # what is mechanically missing, and what a reviewer must still judge
-bash cmd-spdd.sh 001 --spdd-action analysis                   # draft 02-analysis.md: needs a written story
+bash cmd-spdd.sh 001 --spdd-action analysis                   # draft 02-analysis.md: only once the story is written
 bash cmd-spdd.sh 001 --spdd-action canvas                     # draft 03-canvas.md: needs an analysis
 bash cmd-spdd.sh 001 --spdd-action read                       # the whole spec as one document
 bash cmd-spdd.sh 001 --spdd-action drift                      # does the canvas still describe the tree
@@ -35,7 +35,9 @@ bash cmd-spdd.sh dev/mysite --spdd-action constitution        # what the product
 ```
 
 A spec is named by its number, its slug, or `<workspace>/<project>/NNN-slug`. The story is written
-by the person who asks: help with its questions, do not fill it in. `analysis` and `canvas` hand
+by the person who asks: help with its questions, do not fill it in. The command does not always
+notice a story that is still the empty template, so holding that gate is your job: never ask for
+an analysis of a story nobody wrote. `analysis` and `canvas` hand
 the draft to the AI CLI on this machine (Claude Code by default) and take a minute; when no CLI
 is found the prompt is written to a file beside the spec instead.
 
@@ -99,7 +101,7 @@ bash cmd-spdd.sh <number> --spdd-action review
 bash cmd-spdd.sh <number> --spdd-action analysis
 ```
 
-`review` says what is still missing; `analysis` is refused until the story is written. For the
+`review` says what is still missing; `analysis` is asked for only once the story is written. For the
 later stages, hand over to the `specs-author` agent; the `specs-workflow` skill has every action.
 """),
  ("Design a change as a spec in the specs folder, stage by stage, before any code is written.", """
@@ -128,4 +130,4 @@ Stop after the analysis and wait for me: the canvas is asked for only when the a
  tools_extra={'cmd-spdd.sh': "One spec, stage by stage: `<spec or target> [what the change is]`. `--spdd-action` is `list`, `story`, `analysis`, `canvas`, `review`, `read`, `drift`, `sync`, `show` or `constitution`; with a target and a sentence it starts a spec, with nothing it lists them",
               'cmd-tools-specs.sh': "Keeps the shared specs (the templates and the product constitutions) in step with the shared repository; with no flag it says what is here, changed, or not here yet"},
  settings_extra=[(['presentation.label', 'presentation.subtitle', 'presentation.noun', 'presentation.kind'], "How the page reads: `Specs`, one item is a `spec`, laid out as a list of `files`")],
- run=["bash cmd-spdd.sh", "bash cmd-spdd.sh dev/demo1 'say hello on the front page' | tail -7", "bash cmd-spdd.sh", "bash cmd-spdd.sh 001 --spdd-action show", "bash cmd-spdd.sh 001 --spdd-action review | head -12", "bash cmd-spdd.sh 001 --spdd-action analysis | head -4", "ls _defaults 2>&1 | head -3"], what='design changes as specs in')
+ run=["bash cmd-spdd.sh", "bash cmd-spdd.sh dev/demo1 'say hello on the front page' | tail -7", "bash cmd-spdd.sh", "bash cmd-spdd.sh 001 --spdd-action show", "bash cmd-spdd.sh 001 --spdd-action review | head -12", "ls _defaults 2>&1 | head -3"], what='design changes as specs in')

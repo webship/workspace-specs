@@ -38,7 +38,7 @@ bash cmd-spdd.sh                                              # the specs: numbe
 bash cmd-spdd.sh dev/mysite "say what the change is"          # start one: the folder, spec.yml and an empty 01-story.md
 bash cmd-spdd.sh 001 --spdd-action show                       # where it is and which files it has
 bash cmd-spdd.sh 001 --spdd-action review                     # what is mechanically missing, and what a reviewer must still judge
-bash cmd-spdd.sh 001 --spdd-action analysis                   # draft 02-analysis.md: needs a written story
+bash cmd-spdd.sh 001 --spdd-action analysis                   # draft 02-analysis.md: only once the story is written
 bash cmd-spdd.sh 001 --spdd-action canvas                     # draft 03-canvas.md: needs an analysis
 bash cmd-spdd.sh 001 --spdd-action read                       # the whole spec as one document
 bash cmd-spdd.sh 001 --spdd-action drift                      # does the canvas still describe the tree
@@ -47,7 +47,9 @@ bash cmd-spdd.sh dev/mysite --spdd-action constitution        # what the product
 ```
 
 A spec is named by its number, its slug, or `<workspace>/<project>/NNN-slug`. The story is written
-by the person who asks: help with its questions, do not fill it in. `analysis` and `canvas` hand
+by the person who asks: help with its questions, do not fill it in. The command does not always
+notice a story that is still the empty template, so holding that gate is your job: never ask for
+an analysis of a story nobody wrote. `analysis` and `canvas` hand
 the draft to the AI CLI on this machine (Claude Code by default) and take a minute; when no CLI
 is found the prompt is written to a file beside the spec instead.
 

@@ -4,5 +4,4 @@ bash cmd-spdd.sh dev/demo1 'say hello on the front page' | tail -7
 bash cmd-spdd.sh
 bash cmd-spdd.sh 001 --spdd-action show
 bash cmd-spdd.sh 001 --spdd-action review | head -12
-bash cmd-spdd.sh 001 --spdd-action analysis | head -4
 ls _defaults 2>&1 | head -3

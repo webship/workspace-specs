@@ -42,5 +42,5 @@ bash cmd-spdd.sh <number> --spdd-action review
 bash cmd-spdd.sh <number> --spdd-action analysis
 ```
 
-`review` says what is still missing; `analysis` is refused until the story is written. For the
+`review` says what is still missing; `analysis` is asked for only once the story is written. For the
 later stages, hand over to the `specs-author` agent; the `specs-workflow` skill has every action.
