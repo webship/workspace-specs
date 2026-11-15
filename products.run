@@ -1,0 +1,4 @@
+bash /tmp/claude-1000/-home-rajab-workspace-core-workspace-app/bbebf673-3643-4eb5-983b-8204bf37ed0e/scratchpad/fp/bin/helpall.sh
+bash cmd-tools-screen.sh --list
+bash cmd-tools-gitlab-ci-local.sh --help 2>&1 | head -8
+mkdir -p pkgx && echo '{"name":"pkgx","scripts":{"lint:js":"echo ok"}}' > pkgx/package.json && bash cmd-tools-checks.sh pkgx --list ; rm -rf pkgx

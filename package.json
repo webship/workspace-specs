@@ -1,7 +1,7 @@
 {
   "name": "@webship.co/workspace-specs",
   "version": "1.0.8",
-  "description": "The Specs workspace for Webship Workspace: the `specs/` folder (type files), its settings file, its 2 commands and its docs, activated as a plugin.",
+  "description": "The Specs workspace for Webship Workspace: the `specs/` folder (type files), its settings file, its 2 commands, its docs and its AI items (an agent, a skill, a command and a prompt, each in the folder of its kind), activated as a plugin.",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
   "license": "ISC",
@@ -11,6 +11,7 @@
   },
   "files": [
     "dist/src",
+    "ai",
     "commands",
     "config",
     "docs",
@@ -26,6 +27,12 @@
   "workspacePlugin": {
     "name": "specs",
     "label": "Specs",
+    "needs": [
+      "ai-agents",
+      "ai-skills",
+      "ai-commands",
+      "ai-prompts"
+    ],
     "workspace": {
       "key": "specs",
       "settingsTemplate": "config/workspace.specs.settings.yml",
@@ -37,6 +44,20 @@
         "docs/AGENTS.md",
         "docs/CLAUDE.md",
         "docs/README.md"
+      ]
+    },
+    "ai": {
+      "agents": [
+        "ai/agents/specs-author.md"
+      ],
+      "skills": [
+        "ai/skills/specs-workflow"
+      ],
+      "commands": [
+        "ai/commands/specs-start.md"
+      ],
+      "prompts": [
+        "ai/prompts/specs-design-a-change.md"
       ]
     },
     "features": [

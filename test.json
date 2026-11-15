@@ -1,0 +1,8 @@
+{
+ "summaries": {
+  "test-site-tester": "Builds a site in `test/` and runs Webship-js on it: the automated-testing builders, the testing stack on any site, the run, the report and what failed",
+  "test-workflow": "How work is done in `test/`: the order from build to report, every builder and tool with its flags, the settings keys",
+  "test-run": "`/test-run <site> [feature or @tag]`: sets the stack up when missing, matches every step, runs and reports what failed and why",
+  "test-build-and-run": "A new session that builds a site with the automated-testing stack, runs its suite once and reports the result"
+ }
+}

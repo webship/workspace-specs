@@ -1,0 +1,8 @@
+{
+ "summaries": {
+  "sandboxes-site-builder": "Spins up a throwaway site in `sandboxes/` to try one thing, tests it when it matters, and clears it afterwards",
+  "sandboxes-workflow": "How work is done in `sandboxes/`: build small, try, prove, clear; every builder and tool with its flags, the settings keys",
+  "sandboxes-try": "`/sandboxes-try <what to try> [name]`: picks the smallest builder, builds the sandbox, reports and offers to remove it",
+  "sandboxes-try-and-clear": "A new session that builds a throwaway site, tries one thing on it, reports and clears it"
+ }
+}

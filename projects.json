@@ -1,0 +1,8 @@
+{
+ "summaries": {
+  "projects-site-keeper": "Works on a client project in `projects/` without putting it at risk: backup, a clone to try the change on, its Webship-js suite, its addresses; starts a new project from a builder",
+  "projects-workflow": "How work is done in `projects/`: back up, clone, test, clear the clone; every command with its flags, the settings keys",
+  "projects-clone": "`/projects-clone <project> [new name] [folder]`: backs the project up, clones it and says where the clone answers",
+  "projects-backup-clone-and-test": "A new session that backs a project up, clones it and runs the Webship-js suite on the clone"
+ }
+}

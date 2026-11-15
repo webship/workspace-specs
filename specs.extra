@@ -1,0 +1,8 @@
+
+## found on the first run of this proof (not repeated: it starts an AI CLI session)
+$ (cd specs && bash cmd-spdd.sh 001 --spdd-action analysis | head -4)      # 01-story.md untouched since the spec was started
+Drafting the analysis — this calls the local Claude Code CLI and takes a minute.
+  Read and correct <demo>/specs/dev/demo1/001-say-hello-on-the-front-page/02-analysis.md — it is the input to the contract.
+The gate "the story is still the empty template" (core/scripts/functions/fun-spdd.sh, spdd_analysis) did not hold: an
+analysis was drafted from a story nobody wrote. The items therefore say that holding this gate is the reader's job.
+Also: `review` points at specs/_defaults/REVIEW.md, and a fresh install has no specs/_defaults (the plugin does not place it).
