@@ -1,5 +1,5 @@
 ---
-description: Start a spec for a change in the specs/ folder of the Webship Workspace with cmd-spdd.sh: name the target, start the spec, show where the story is to be written, and say what the next gate is.
+description: Start a spec for a change in the specs/ folder of the Webship Workspace with cmd-spdd.sh — name the target, start the spec, show where the story is to be written, and say what the next gate is.
 argument-hint: '<workspace>/<project> <what the change is>'
 ---
 
