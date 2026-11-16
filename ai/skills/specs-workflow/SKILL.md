@@ -1,6 +1,6 @@
 ---
 name: specs-workflow
-description: How work is done in the `specs/` folder of the Webship Workspace — what a spec is there (a folder per change: story, analysis, REASONS Canvas, `spec.yml`), the stages and their gates, every action of `cmd-spdd.sh`, how the shared specs are kept in step with `cmd-tools-specs.sh`, and the settings keys of the folder. Use when asked to "start a spec", "what stage is this spec at", "review the spec", "check the canvas for drift", or when a command of `specs/` is about to be run.
+description: How work is done in the `specs/` folder of the Webship Workspace — what a spec is there (a folder per change — story, analysis, REASONS Canvas, `spec.yml`), the stages and their gates, every action of `cmd-spdd.sh`, how the shared specs are kept in step with `cmd-tools-specs.sh`, and the settings keys of the folder. Use when asked to "start a spec", "what stage is this spec at", "review the spec", "check the canvas for drift", or when a command of `specs/` is about to be run.
 argument-hint: '[what you are about to do in specs]'
 ---
 
